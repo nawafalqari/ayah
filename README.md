@@ -5,7 +5,7 @@
 ```python
 from requests import get
 
-zekr = get('https://azkar.ml/zekr?json=true').json() # Type = dict
+zekr = get('https://azkar-api.nawafhq.repl.co/zekr?json=true').json() # Type = dict
 print(zekr['content'])
 ```
 #### يمكن تحديد نوع الاذكار المراد رؤيتها
@@ -26,14 +26,14 @@ https://azkar.ml/zekr?[type]=true
 ##### أمثلة
 سيظهر ذكر من اذكار الصباح
 ```
-https://azkar.ml/zekr?m=true
+https://azkar-api.nawafhq.repl.co/zekr?m=true
 ```
 سيظهر دعاء من أدعية الأنبياء
 ```
-https://azkar.ml/zekr?pd=true
+https://azkar-api.nawafhq.repl.co/zekr?pd=true
 ```
 يمكن ارجاع البيانات كـ JSON
 ```
-https://azkar.ml/zekr?t=true&json=true
+https://azkar-api.nawafhq.repl.co/zekr?t=true&json=true
 ```
 سيرجع هذا المثال تسابيح عشوائية كـ كائن JSON
