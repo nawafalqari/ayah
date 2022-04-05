@@ -37,9 +37,3 @@ https://azkar-api.nawafhq.repl.co/zekr?pd=true
 https://azkar-api.nawafhq.repl.co/zekr?t=true&json=true
 ```
 سيرجع هذا المثال تسابيح عشوائية كـ كائن JSON
-
-#### إذا لم يعمل `https://azkar.nawaf.cf/`
-استخدم:
-```
-https://azkar-api.nawafhq.repl.co/zekr
-```
