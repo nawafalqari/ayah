@@ -45,9 +45,12 @@ https://azkar-api.nawafhq.repl.co/zekr?pd=true
 ```
 
 يمكن ارجاع البيانات كـ JSON
-
 ```
 https://azkar-api.nawafhq.repl.co/zekr?t=true&json=true
 ```
 
+=======
+```
+https://azkar-api.nawafhq.repl.co/zekr?t=true&json=true
+```
 سيرجع هذا المثال تسابيح عشوائية كـ كائن JSON
