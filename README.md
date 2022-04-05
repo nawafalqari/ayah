@@ -10,7 +10,7 @@ print(zekr['content'])
 ```
 #### يمكن تحديد نوع الاذكار المراد رؤيتها
 ```
-https://azkar.nawaf.cf/zekr?[type]=true
+https://azkar-api.nawafhq.repl.co/zekr?[type]=true
 ```
 |     نوع الذِكر     | الإختصار     |
 |--------------|-----------|
@@ -26,15 +26,15 @@ https://azkar.nawaf.cf/zekr?[type]=true
 ##### أمثلة
 سيظهر ذكر من اذكار الصباح
 ```
-https://azkar.nawaf.cf/zekr?m=true
+https://azkar-api.nawafhq.repl.co/zekr?m=true
 ```
 سيظهر دعاء من أدعية الأنبياء
 ```
-https://azkar.nawaf.cf/zekr?pd=true
+https://azkar-api.nawafhq.repl.co/zekr?pd=true
 ```
 يمكن ارجاع البيانات كـ JSON
 ```
-https://azkar.nawaf.cf/zekr?t=true&json=true
+https://azkar-api.nawafhq.repl.co/zekr?t=true&json=true
 ```
 سيرجع هذا المثال تسابيح عشوائية كـ كائن JSON
 
