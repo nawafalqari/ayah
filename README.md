@@ -1,17 +1,24 @@
 # azkar-api
 
 ## طريقة الإستخدام
+
 ### Python
+
 ```python
 from requests import get
 
 zekr = get('https://azkar-api.nawafhq.repl.co/zekr?json=true').json() # Type = dict
 print(zekr['content'])
 ```
+
+[طريقة الاستعمال في لغات أخرى](https://github.com/nawafalqari/azkar-api/tree/main/examples "طريقة الاستعمال في لغات أخرى")
+
 #### يمكن تحديد نوع الاذكار المراد رؤيتها
+
 ```
-https://azkar.nawaf.cf/zekr?[type]=true
+https://azkar-api.nawafhq.repl.co/zekr?[type]=true
 ```
+
 |     نوع الذِكر     | الإختصار     |
 |--------------|-----------|
 | أذكار الصباح | m      |
@@ -24,22 +31,23 @@ https://azkar.nawaf.cf/zekr?[type]=true
 | أدعية الأنبياء      | pd |
 
 ##### أمثلة
-سيظهر ذكر من اذكار الصباح
-```
-https://azkar.nawaf.cf/zekr?m=true
-```
-سيظهر دعاء من أدعية الأنبياء
-```
-https://azkar.nawaf.cf/zekr?pd=true
-```
-يمكن ارجاع البيانات كـ JSON
-```
-https://azkar.nawaf.cf/zekr?t=true&json=true
-```
-سيرجع هذا المثال تسابيح عشوائية كـ كائن JSON
 
-#### إذا لم يعمل `https://azkar.nawaf.cf/`
-استخدم:
+سيظهر ذكر من اذكار الصباح
+
 ```
-https://azkar-api.nawafhq.repl.co/zekr
+https://azkar-api.nawafhq.repl.co/zekr?m=true
 ```
+
+سيظهر دعاء من أدعية الأنبياء
+
+```
+https://azkar-api.nawafhq.repl.co/zekr?pd=true
+```
+
+يمكن ارجاع البيانات كـ JSON
+
+```
+https://azkar-api.nawafhq.repl.co/zekr?t=true&json=true
+```
+
+سيرجع هذا المثال تسابيح عشوائية كـ كائن JSON
