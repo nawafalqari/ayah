@@ -1,4 +1,4 @@
-from json import load
+from json import load, dumps
 from random import choice
 
 def load_azkar(filename:str):
@@ -16,22 +16,22 @@ def getZekr(args:dict):
       if not zekrNames:
          zekr = get()
 
-         return zekr
+         return dumps(zekr, ensure_ascii=False)
 
       randomZekr = choice(zekrNames)
       zekr = get(randomZekr)
 
-      return zekr
+      return dumps(zekr, ensure_ascii=False)
 
    if not zekrNames:
-      zekr = getZekr()
+      zekr = get()
 
-      return zekr
+      return dumps(zekr, ensure_ascii=False)
 
    randomZekr = choice(zekrNames)
    zekr = get(randomZekr)
 
-   return zekr
+   return dumps(zekr, ensure_ascii=False)
 
 def get(type:str="random"):
    types = list(file_data.keys())
