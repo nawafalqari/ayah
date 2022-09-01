@@ -50,6 +50,12 @@ def get_zekr_handler(args):
     zekr_name = list(map(convert_shortcut, list(args)))
     if 'json' in zekr_name:
         zekr_name.remove('json')
+
+        if not zekr_name:
+            zekr = get_zekr()
+
+            return json.dumps(zekr, ensure_ascii=False)
+
         random_zekr = choice(zekr_name)
         zekr = get_zekr(random_zekr)
 
@@ -57,7 +63,12 @@ def get_zekr_handler(args):
 
     if False in zekr_name:
         return '"ERROR" Unknown parameter'
-    
+
+    if not zekr_name:
+        zekr = get_zekr()
+
+        return json.dumps(zekr, ensure_ascii=False)
+
     random_zekr = choice(zekr_name)
     zekr = get_zekr(random_zekr)
 
