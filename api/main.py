@@ -2,7 +2,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import RedirectResponse, PlainTextResponse
 from uvicorn import run
 
-from azkar_handler import getZekr
+from azkar_handler import get_zekr
 
 app = FastAPI(title="Azkar API", description="API للأذكار")
 
@@ -11,8 +11,8 @@ def index():
    return RedirectResponse("https://github.com/nawafalqari/azkar-api")
 
 @app.get("/zekr")
-def zekrRoute(request: Request):
-   return PlainTextResponse(getZekr(request.query_params._dict))
+def zekr_route(request: Request):
+   return PlainTextResponse(get_zekr(request.query_params._dict))
 
 if __name__ == "__main__":
    run("main:app", host="0.0.0.0", workers=3)
