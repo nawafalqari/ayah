@@ -80,3 +80,21 @@ def get_sura_data(sura:str=None, jozz:int=None, page:int=None):
          return aya
 
    return {"err": True, "message": "Invalid parameter: (sura) or (jozz) or (page)"}
+
+def get_previous_sura(sura:str):
+   sura = find_sura(sura)
+   if not sura:
+      return dumps({"err": True, "message": "Invalid sura name"})
+   suras = get_suras_names()
+   if sura == suras[0]:
+      return dumps({"first": True})
+   return dumps({"sura": suras[suras.index(sura)-1]}, ensure_ascii=False)
+
+def get_next_sura(sura:str):
+   sura = find_sura(sura)
+   if not sura:
+      return dumps({"err": True, "message": "Invalid sura name"})
+   suras = get_suras_names()
+   if sura == suras[-1]:
+      return dumps({"last": True})
+   return dumps({"sura": suras[suras.index(sura)+1]}, ensure_ascii=False)
