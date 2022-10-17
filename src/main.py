@@ -33,15 +33,7 @@ def quran_route(sura:str=None, jozz:int=None, page:int=None):
 
 @app.get("/quran/{page}")
 def quran_page(page:int):
-   path = f"data/quran/{page}.jpg"
-   try:
-      with open(path):
-         pass
-
-      return FileResponse(f"data/quran/{page}.jpg")
-   except:
-      return {"err": True, "message": "invalid page number"}
-
+   return RedirectResponse(f"https://cdn-azkar-api.nawafhq.repl.co/quran/{page}")
 
 @app.get("/quran.json")
 def quran_file():
