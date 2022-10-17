@@ -52,4 +52,4 @@ def quran_file_minified():
    return PlainTextResponse(dumps(quran_data, ensure_ascii=False))
 
 if __name__ == "__main__":
-   run("main:app", host="0.0.0.0", workers=1)
+   run("main:app", host="0.0.0.0", workers=3)

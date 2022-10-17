@@ -29,7 +29,7 @@ def get_sura(sura:str):
    if sura.get("err"):
       return sura
 
-   sura["img"] = f"https://azkar-api.nawafhq.repl.co/quran/{sura['page']}"
+   sura["img"] = f"https://cdn-azkar-api.nawafhq.repl.co/quran/{sura['page']}"
    return sura
 
 def get_jozz(jozz:int):
@@ -37,7 +37,7 @@ def get_jozz(jozz:int):
    if jozz.get("err"):
       return jozz
    
-   jozz["img"] = f"https://azkar-api.nawafhq.repl.co/quran/{jozz['page']}"
+   jozz["img"] = f"https://cdn-azkar-api.nawafhq.repl.co/quran/{jozz['page']}"
    return jozz
 
 def get_page(page:int):
@@ -45,7 +45,7 @@ def get_page(page:int):
    if page.get("err"):
       return page
    
-   page["img"] = f"https://azkar-api.nawafhq.repl.co/quran/{page['page']}"
+   page["img"] = f"https://cdn-azkar-api.nawafhq.repl.co/quran/{page['page']}"
    return page
 
 def get_suras_names():
