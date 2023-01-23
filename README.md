@@ -2,12 +2,16 @@
 <center>
 
 # آية - Ayah
-### API مفتوح المصدر للأذكار والقرآن والأحاديث
+### <p align="center" dir="rtl"> API مفتوح المصدر للأذكار والقرآن والأحاديث</p>
+
+<div align="center">
 
 
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/TheSpeedDB)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/Az8McWNAcg)
 [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/NawafHAlqari)
+
+</div>
 
 </center>
 
