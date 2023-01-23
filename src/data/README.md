@@ -4,7 +4,7 @@
 
 <ul>
 
-<li>
+<li dir="rtl">
 
 [الاذكار (**adkar.json**)](adkar.json)
 
@@ -26,7 +26,7 @@
 
 </li>
 
-<li>
+<li dir="rtl">
 
 [صور القرآن الكريم (**/images**)](/src/data/images)
 
