@@ -20,7 +20,7 @@
 
 <ul>
 
-<li>
+<li dir="rtl">
 
 [آيات القرآن الكريم (**quran.json**)](quran.json)
 
