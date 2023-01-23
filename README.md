@@ -1,7 +1,7 @@
-<center><img src="images/ayah-blue-blue.png" style="border-radius: 10%;width: 100px"></center>
-<center>
+<div align="center"><img src="images/ayah-blue-blue.png" style="border-radius: 10%;width: 100px"></center>
+</div>
 
-# آية - Ayah
+# <p align="center" dir="rtl"> آية - Ayah </p>
 ### <p align="center" dir="rtl"> API مفتوح المصدر للأذكار والقرآن والأحاديث</p>
 
 <div align="center">
