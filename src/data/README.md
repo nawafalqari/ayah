@@ -1,6 +1,6 @@
 # البيانات المستخدة في الـ API
 
-<div dir="rtl">
+<div dir="rtl" align="right">
 
 <ul>
 
