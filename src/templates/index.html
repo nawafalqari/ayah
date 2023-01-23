@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="آية">
+    <meta name="description" content="API مفتوح المصدر للأذكار والقرآن والأحاديث">
+    <meta name="keywords" content="آية, ayah, اية, قران, قرآن, quran, hadeth, hadith, adkar, اذكار">
+    <meta name="theme-color" content="#3b87a7">
+    <meta name="copyright" content="Ayah">
+    <meta name="language" content="Arabic">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ayah.nawafdev.com/">
+    <meta property="og:title" content="Ayah">
+    <meta property="og:description" content="API مفتوح المصدر للأذكار والقرآن والأحاديث">
+    <meta property="og:image" content="https://ayah.nawafdev.com/files/ayah-full-width.png">
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayah</title>
+    <link
+      rel="icon"
+      href="files/ayah-full-width.png">
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        background-color: #181f21;
+        color: white;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+
+      nav {
+        height: 70px;
+      }
+
+      nav,
+      footer {
+        /* background: linear-gradient(90deg, rgba(59,135,167,1) 35%, rgba(19,87,116,1) 100%); */
+        background: linear-gradient(
+          90deg,
+          rgba(19, 87, 116, 1) 35%,
+          rgba(59, 135, 167, 1) 100%
+        );
+      }
+
+      .content {
+        min-height: 100vh;
+      }
+
+      .promo i {
+        margin: 40px 0;
+        /* color: #135774; */
+        color: #3b87a7;
+        font-size: 7rem;
+        display: block;
+      }
+
+      .promo-caption {
+        font-size: 1.7rem;
+        font-weight: 500;
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+
+      #features > .col.hoverable {
+        border-radius: 20px;
+      }
+
+      #logo {
+        margin-top: 3px;
+      }
+
+      .z-depth-inf {
+        -webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+          0 9px 46px 8px rgba(0, 0, 0, 0.12),
+          0 11px 15px -7px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+          0 9px 46px 8px rgba(0, 0, 0, 0.12),
+          0 11px 15px -7px rgba(0, 0, 0, 0.2);
+      }
+
+      .footer-row,
+      .footer-cr {
+        display: flex;
+        justify-content: center;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        direction: rtl;
+      }
+
+      img {
+        user-drag: none;
+        -webkit-user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+      }
+    </style>
+  </head>
+
+  <!-- header start -->
+
+  <body>
+    <main>
+      <nav>
+        <div class="nav-wrapper z-depth-5">
+          <div class="container">
+            <a href="{{ url_for('index') }}">
+              <img
+                src="files/ayah-blue-blue.png"
+                alt="Ayah Logo"
+                id="logo"
+                width="60"
+                height="60"
+                class="circle brand-logo left"
+              />
+            </a>
+          </div>
+          <div class="container">
+            <!-- Links for computer -->
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="{{ urls['docs'] }}">API & Docs</a>
+              </li>
+              <li>
+                <a href="{{ urls['github'] }}">Github</a>
+              </li>
+              <li>
+                <a href="{{ urls['discord'] }}">Discord</a>
+              </li>
+              <li>
+                <a href="{{ urls['twitter'] }}">Twitter</a>
+              </li>
+            </ul>
+            <!-- Links for mobile -->
+            <ul class="right hide-on-med-and-up" style="margin-top: 5px">
+              <li>
+                <a href="{{ urls['docs'] }}">API & Docs</a>
+              </li>
+              <li>
+                <a href="{{ urls['github'] }}">Github</a>
+              </li>
+              <li>
+                <a href="{{ urls['discord'] }}">Discord</a>
+              </li>
+              <li>
+                <a href="{{ urls['twitter'] }}">Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- header end -->
+      <br />
+      <div class="content">
+        <!-- For computer -->
+        <div
+          class="container center hide-on-med-and-down"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <a href="{{ url_for('index') }}">
+            <img
+            src="files/ayah-blue-blue.png"
+            alt="Ayah Logo"
+              width="300"
+              height="300"
+              class="circle"
+            />
+          </a>
+          <p class="flow-text">
+            <strong style="font-size: 3rem">آية</strong>
+            <br />
+            مشروع آية هو مشروع مفتوح المصدر يحتوى على صفحات من القرآن وآيات
+            وأحاديث وأذكار كما يساعد المبرمجين على تطوير برمجياتهم الخاصة بهم من
+            خلال API
+          </p>
+        </div>
+        <!-- For mobile -->
+        <div
+          class="container center show-on-medium-and-down hide-on-med-and-up"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <img
+            src="files/ayah-blue-blue.png"
+            alt="Ayah Logo"
+            width="300"
+            height="300"
+            class="circle"
+          />
+          <p class="flow-text">
+            <strong style="font-size: 3rem">آية</strong>
+            <br />
+            مشروع آية هو مشروع مفتوح المصدر يحتوى على صفحات من القرآن وآيات
+            وأحاديث وأذكار كما يساعد المبرمجين على تطوير برمجياتهم الخاصة بهم من
+            خلال API
+          </p>
+        </div>
+        <br />
+        <center>
+          <h3>المميزات:</h3>
+          <br />
+          <div class="row" id="features" style="margin: 0 10px">
+            <div class="col s12 m4 hoverable">
+              <div class="center promo promo-example">
+                <i class="material-icons">money_off</i>
+                <p class="promo-caption">مجاني</p>
+                <p class="light center">
+                  مشروع آية مشروع قابل للاستخدام من قبل الكل وهو مجاني بنسبة
+                  100%
+                </p>
+              </div>
+            </div>
+            <div class="col s12 m4 hoverable">
+              <div class="center promo promo-example">
+                <i class="material-icons">group</i>
+                <p class="promo-caption">مفتوح المصدر</p>
+                <p class="light center">
+                  مشروع آية مشروع مفتوح المصدر مما يتيح للجميع المشاركة في تطوير
+                  المشروع
+                </p>
+              </div>
+            </div>
+            <div class="col s12 m4 hoverable">
+              <div class="center promo promo-example">
+                <i class="material-icons">mosque</i>
+                <p class="promo-caption">المحتويات</p>
+                <p class="light center">
+                  مشروع آية يحتوي على كل من: صفحات القرآن، آيات، أحاديث، أذكار
+                </p>
+              </div>
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <br /><br />
+      <!-- Footer Start -->
+      <footer class="page-footer">
+        <div class="container">
+          <div class="row footer-row">
+            <div>
+              <a class="col grey-text text-lighten-3" href="{{ urls['docs'] }}"
+                >API & Docs</a
+              >
+            </div>
+            <div>
+              <a
+                class="col grey-text text-lighten-3"
+                href="{{ urls['github'] }}"
+                >Github</a
+              >
+            </div>
+            <div>
+              <a
+                class="col grey-text text-lighten-3"
+                href="{{ urls['discord'] }}"
+                >Discord</a
+              >
+            </div>
+            <div>
+              <a
+                class="col grey-text text-lighten-3"
+                href="{{ urls['twitter'] }}"
+                >Twitter</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container footer-cr">
+            <span>
+              &#169; <span id="copyright-year"></span> All Right Reserved To
+              <strong>Ayah</strong>.
+            </span>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer End -->
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      window.onload = function () {
+        document.getElementById("copyright-year").innerHTML =
+          new Date().getFullYear();
+      };
+    </script>
+  </body>
+</html>
