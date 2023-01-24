@@ -122,7 +122,7 @@ QURAN_PREVIOUS_SURA = {
 
 مثال:
 ```
-http://localhost:8000/api/quran/previous_sura?sura=البقرة
+https://ayah.nawafdev.com/api/quran/previous_sura?sura=البقرة
 ```
 النتيجة:
 ```
@@ -138,7 +138,7 @@ http://localhost:8000/api/quran/previous_sura?sura=البقرة
 
 مثال:
 ```
-http://localhost:8000/api/quran/previous_sura?sura=الفاتحة
+https://ayah.nawafdev.com/api/quran/previous_sura?sura=الفاتحة
 ```
 
 النتيجة
@@ -159,7 +159,7 @@ QURAN_NEXT_SURA = {
 
 مثال:
 ```
-http://localhost:8000/api/quran/next_sura?sura=الفاتحة
+https://ayah.nawafdev.com/api/quran/next_sura?sura=الفاتحة
 ```
 النتيجة:
 ```
@@ -175,7 +175,7 @@ http://localhost:8000/api/quran/next_sura?sura=الفاتحة
 
 مثال:
 ```
-http://localhost:8000/api/quran/next_sura?sura=الناس
+https://ayah.nawafdev.com/api/quran/next_sura?sura=الناس
 ```
 
 النتيجة
