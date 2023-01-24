@@ -17,7 +17,7 @@ IMAGES_PATH = join(BASE_DIR, "images")
 
 DISCORD_URL = "https://discord.gg/Az8McWNAcg"
 TWITTER_URL = "https://twitter.com/nawafalqari2"
-GITHUB_URL = ""
+GITHUB_URL = "https://github.com/nawafalqari/ayah"
 
 DOCS_URL = "/docs"
 DOCS_TITLE = "Ayah - آية"
