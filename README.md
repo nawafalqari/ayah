@@ -24,13 +24,13 @@
 
 <li>
 
-[الموقع](https://ayah.nawafdev.com/)
+[الموقع](https://ayah.nawafdev.com/) (غير متوفر)
 
 </li>
 
 <li>
 
-[طريقة الاستخدام](https://ayah.nawafdev.com/docs)
+[طريقة الاستخدام](https://ayah.nawafdev.com/docs) (غير متوفر)
 
 </li>
 
